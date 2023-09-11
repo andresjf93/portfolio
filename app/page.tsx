@@ -3,7 +3,7 @@ import React from "react";
 import Particles from "./components/particles";
 
 const navigation = [
-	{ name: "Projects", href: "/projects" },
+	{ name: "Projects", href: "" },
 	{ name: "Contact", href: "/contact" },
 ];
 
@@ -29,14 +29,14 @@ export default function Home() {
 				quantity={100}
 			/>
 			<h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
-				chronark
+			Andrés Farías
 			</h1>
 
 			<div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 			<div className="my-16 text-center animate-fade-in">
 				<h2 className="text-sm text-zinc-500 ">
-					Hi, my name is Andreas, I'm building serverless and open source
-					solutions at{" "}
+					Hola, mi nombre es Andrés, y soy Full Stack Developer React | Redux | Javascript | Tailwind 
+					<p>I'm building serverlessand open source solutions at{" "}
 					<Link
 						target="_blank"
 						href="https://upstash.com"
@@ -44,17 +44,17 @@ export default function Home() {
 					>
 						Upstash
 					</Link>
-
 					<br />
 					and working on{" "}
 					<Link
 						target="_blank"
 						href="https://unkey.dev"
 						className="underline duration-500 hover:text-zinc-300"
-					>
+						>
 						unkey.dev
 					</Link>{" "}
 					at night.
+						</p>
 				</h2>
 			</div>
 		</div>
