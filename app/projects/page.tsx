@@ -15,7 +15,7 @@ export default async function ProjectsPage() {
             <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
                 <div className="max-w-2xl mx-auto lg:mx-0">
                     <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
-                      Mis Proyectos
+                        Mis Proyectos
                     </h2>
                     <p className="mt-4 text-zinc-400">
                         Mis proyectos durante mi tiempo en SoyHenry Bootcamp
@@ -30,12 +30,12 @@ export default async function ProjectsPage() {
                                 <div className=" flex items-center justify-center gap-3  ">
                                     <div className="flex text-xs text-zinc-100 ">
                                         <Card>
-                                            <img src="https://media.licdn.com/dms/image/D4E2DAQEL0NMdp2oOUA/profile-treasury-image-shrink_800_800/0/1694540420652?e=1695164400&v=beta&t=C6tq58NPbuIwhXEvOtd5JouDIeEZzKKk47L6VjEKrR8" 
-                                            alt="pi-dogs"
-                                             width= {600}
-                                             height= {400} />
+                                            <img src="https://media.licdn.com/dms/image/D4E2DAQEL0NMdp2oOUA/profile-treasury-image-shrink_800_800/0/1694540420652?e=1695164400&v=beta&t=C6tq58NPbuIwhXEvOtd5JouDIeEZzKKk47L6VjEKrR8"
+                                                alt="pi-dogs"
+                                                width={600}
+                                                height={400} />
                                         </Card>
-                                     
+
                                     </div>
                                 </div>
                                 <h2 id="featured-post"
@@ -43,54 +43,58 @@ export default async function ProjectsPage() {
                                 >Pi Henry Dogs
                                 </h2>
                                 <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
-                                    Mi primer proyecto, Fue una experiencia gratificante e inovaodra para aplicar todo lo aprendido en el Bootcamp de SoyHenry. Es bastante básico pero la idea es ir mejorándolo bastante para reforzar mas los conocimientos y poder aprender mas.
-                                    Es una pagina diseñada para trabajar con una API externa de perros. sus razas y estadisticas fue un gran reto el cual pude desarrollar gracias a mis compañeros y la guia prestada por SoyHenry
-                                    Link del deploy: En proceso
+                                    Mi primer proyecto fue una experiencia gratificante e innovadora, ya que pude aplicar todo lo aprendido en el Bootcamp de SoyHenry. A pesar de ser bastante básico, la idea es mejorarlo significativamente para reforzar mis conocimientos y aprender aún más.
+
+                                    Se trata de una página diseñada para trabajar con una API externa de perros, sus razas y estadísticas. Este proyecto representó un gran desafío, el cual pude desarrollar gracias al apoyo de mis compañeros y la guía proporcionada por SoyHenry.
+
+                                    El enlace para acceder al deploy se encuentra en proceso y estará disponible próximamente.
+
                                 </p>
-                                
+
                                 <Card>
-                                        <img src="https://media.licdn.com/dms/image/D4E2DAQFttdV9qk5NmQ/profile-treasury-image-shrink_800_800/0/1694540573847?e=1695164400&v=beta&t=gRllLRv-FdqwSgU5yYCYRRG_zjx_Dj8tWq4S07jNCNU"
-                                         alt="pi-dogs" 
-                                         width= {600}
-                                             height= {400}/>
-                                        </Card>
+                                    <img src="https://media.licdn.com/dms/image/D4E2DAQFttdV9qk5NmQ/profile-treasury-image-shrink_800_800/0/1694540573847?e=1695164400&v=beta&t=gRllLRv-FdqwSgU5yYCYRRG_zjx_Dj8tWq4S07jNCNU"
+                                        alt="pi-dogs"
+                                        width={600}
+                                        height={400} />
+                                </Card>
                             </article>
                         </Link>
                     </Card>
 
                     <div className="flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
-                    <Card>
-                        <Link href="https://hyperevent-fe.vercel.app/" target="_blank" rel="noopener noreferrer">
-                            <article className="relative w-full h-full p-4 md:p-8">
-                                <div className=" flex items-center justify-center gap-3  ">
-                                    <div className="flex text-xs text-zinc-100 ">
-                                       
-                                        
+                        <Card>
+                            <Link href="https://hyperevent-fe.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                <article className="relative w-full h-full p-4 md:p-8">
+                                    <div className=" flex items-center justify-center gap-3  ">
+                                        <div className="flex text-xs text-zinc-100 ">
+
+
+                                        </div>
                                     </div>
-                                </div>
-                                <h2 id="featured-post"
-                                    className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display"
-                                >Hyper Events
-                                </h2>
-                                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
-                                Es una pagina de compra y venta de tickets para eventos en la que puedes buscar una nueva experiencia para vivir o salir a divertirte con amigos, por ahora sigue en desarrollo y quizás pueda cambiar la idea principal para adaptarse a algún cliente
-Link de la pagina para poder probarla: https://hyperevent-fe.vercel.app/
-                                </p>
-                                <Card>
-                                            <img src="https://media.licdn.com/dms/image/D4E2DAQF4n0Fb3WgLQg/profile-treasury-image-shrink_1920_1920/0/1694539610186?e=1695168000&v=beta&t=SatT9-kQUIYJ5hbJYzfVigf4Nci9K3s-B8bfBRmwn0k" 
+                                    <h2 id="featured-post"
+                                        className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display"
+                                    >Hyper Events
+                                    </h2>
+                                    <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
+                                        Es una página de compra y venta de tickets para eventos en la que puedes buscar una nueva experiencia para vivir o salir a divertirte con amigos. Por ahora, sigue en desarrollo y quizás pueda cambiar la idea principal para adaptarse a algún cliente.
+
+                                        Link de la página para poder probarla: https://hyperevent-fe.vercel.app/
+                                    </p>
+                                    <Card>
+                                        <img src="https://media.licdn.com/dms/image/D4E2DAQF4n0Fb3WgLQg/profile-treasury-image-shrink_1920_1920/0/1694539610186?e=1695168000&v=beta&t=SatT9-kQUIYJ5hbJYzfVigf4Nci9K3s-B8bfBRmwn0k"
                                             alt="H-events"
-                                             width= {400}
-                                           />
-                                        </Card>
-                            </article>
-                        </Link>
-                    </Card>
+                                            width={400}
+                                        />
+                                    </Card>
+                                </article>
+                            </Link>
+                        </Card>
 
                     </div>
                 </div>
-                
 
-                
+
+
             </div>
         </div>
     );
