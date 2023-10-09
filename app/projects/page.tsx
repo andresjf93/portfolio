@@ -30,7 +30,7 @@ export default async function ProjectsPage() {
                                 <div className=" flex items-center justify-center gap-3  ">
                                     <div className="flex text-xs text-zinc-100 ">
                                         <Card>
-                                            <img src="C:\Users\USUARIO\OneDrive\Desktop\Produccion\portfolio\portfolio\util\Landin pi.png"
+                                            <img src="portfolio\util\Landin pi.png"
                                                 alt="pi-dogs"
                                                 width={600}
                                                 height={400} />
@@ -52,7 +52,7 @@ export default async function ProjectsPage() {
                                 </p>
 
                                 <Card>
-                                    <img src="C:\Users\USUARIO\OneDrive\Desktop\Produccion\portfolio\portfolio\util\PI.png"
+                                    <img src="portfolio\util\PI.png"
                                         alt="pi-dogs"
                                         width={600}
                                         height={400} />
@@ -81,7 +81,7 @@ export default async function ProjectsPage() {
                                         Link de la página para poder probarla: https://hyperevent-fe.vercel.app/
                                     </p>
                                     <Card>
-                                        <img src="C:\Users\USUARIO\OneDrive\Desktop\Produccion\portfolio\portfolio\util\Hyper Event.png"
+                                        <img src="portfolio\util\Hyper Event.png"
                                             alt="H-events"
                                             width={400}
                                         />
