@@ -36,9 +36,9 @@ export default function Home() {
 			<div className="my-16 text-center animate-fade-in">
 				<h2 className=" text-base text-zinc-200 ">
 					Hola, mi nombre es Andrés y soy Full Stack Developer con experiencia en React, Redux, Javascript y Tailwind.
-					<p>Preparado y con capacidad para el puesto solicitado, formado en Backend y Frontend, cuento con capacidades como responsabilidad, proactividad, 					</p>
+					{/* <p>Preparado y con capacidad para el puesto solicitado, formado en Backend y Frontend, cuento con capacidades como responsabilidad, proactividad, 					</p>
 					<p>capacidad de resolución de problemas, muchas ganas de trabajar en equipo y aptitudes suficientes para el liderazgo,</p>
-					<p>trabajo bajo presión, constancia en el trabajo, de aprendizaje y adaptación rápida.</p>
+					<p>trabajo bajo presión, constancia en el trabajo, de aprendizaje y adaptación rápida.</p> */}
 				</h2>
 			</div>
 		</div>
