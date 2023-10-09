@@ -30,7 +30,7 @@ export default async function ProjectsPage() {
                                 <div className=" flex items-center justify-center gap-3  ">
                                     <div className="flex text-xs text-zinc-100 ">
                                         <Card>
-                                            <img src="portfolio\util\Landin pi.png"
+                                            <img src="https://media.licdn.com/dms/image/D4E2DAQEL0NMdp2oOUA/profile-treasury-image-shrink_800_800/0/1694540420652?e=1697421600&v=beta&t=_OML44fSC6rSzLanEDGwSQMd8tnFSaGDa7Wfl-HXvlg"
                                                 alt="pi-dogs"
                                                 width={600}
                                                 height={400} />
@@ -52,7 +52,7 @@ export default async function ProjectsPage() {
                                 </p>
 
                                 <Card>
-                                    <img src="portfolio\util\PI.png"
+                                    <img src="https://media.licdn.com/dms/image/D4E2DAQFttdV9qk5NmQ/profile-treasury-image-shrink_800_800/0/1694540573847?e=1697421600&v=beta&t=qMEfdhJTBlDtsGTpDh8kkhNarIJhHoAAVGtm853Iupc"
                                         alt="pi-dogs"
                                         width={600}
                                         height={400} />
@@ -81,7 +81,7 @@ export default async function ProjectsPage() {
                                         Link de la página para poder probarla: https://hyperevent-fe.vercel.app/
                                     </p>
                                     <Card>
-                                        <img src="portfolio\util\Hyper Event.png"
+                                        <img src="https://media.licdn.com/dms/image/D4E2DAQF4n0Fb3WgLQg/profile-treasury-image-shrink_160_160/0/1694539610186?e=1697421600&v=beta&t=2GjoIFF0DbJI7rWo807oE59pQff-IxtarbMEIXXnx-0"
                                             alt="H-events"
                                             width={400}
                                         />
