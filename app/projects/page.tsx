@@ -30,7 +30,7 @@ export default async function ProjectsPage() {
                                 <div className=" flex items-center justify-center gap-3  ">
                                     <div className="flex text-xs text-zinc-100 ">
                                         <Card>
-                                            <img src="https://media.licdn.com/dms/image/D4E2DAQEL0NMdp2oOUA/profile-treasury-image-shrink_800_800/0/1694540420652?e=1695164400&v=beta&t=C6tq58NPbuIwhXEvOtd5JouDIeEZzKKk47L6VjEKrR8"
+                                            <img src="C:\Users\USUARIO\OneDrive\Desktop\Produccion\portfolio\portfolio\util\Landin pi.png"
                                                 alt="pi-dogs"
                                                 width={600}
                                                 height={400} />
@@ -52,7 +52,7 @@ export default async function ProjectsPage() {
                                 </p>
 
                                 <Card>
-                                    <img src="https://media.licdn.com/dms/image/D4E2DAQFttdV9qk5NmQ/profile-treasury-image-shrink_800_800/0/1694540573847?e=1695164400&v=beta&t=gRllLRv-FdqwSgU5yYCYRRG_zjx_Dj8tWq4S07jNCNU"
+                                    <img src="C:\Users\USUARIO\OneDrive\Desktop\Produccion\portfolio\portfolio\util\PI.png"
                                         alt="pi-dogs"
                                         width={600}
                                         height={400} />
@@ -81,7 +81,7 @@ export default async function ProjectsPage() {
                                         Link de la página para poder probarla: https://hyperevent-fe.vercel.app/
                                     </p>
                                     <Card>
-                                        <img src="https://media.licdn.com/dms/image/D4E2DAQF4n0Fb3WgLQg/profile-treasury-image-shrink_1920_1920/0/1694539610186?e=1695168000&v=beta&t=SatT9-kQUIYJ5hbJYzfVigf4Nci9K3s-B8bfBRmwn0k"
+                                        <img src="C:\Users\USUARIO\OneDrive\Desktop\Produccion\portfolio\portfolio\util\Hyper Event.png"
                                             alt="H-events"
                                             width={400}
                                         />
