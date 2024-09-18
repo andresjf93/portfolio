@@ -1,50 +1,13 @@
-"use client"
 import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
-import { motion } from "framer-motion";
-import { useSectionInView } from "@/lib/hooks";
 
 const navigation = [
 	{ name: "Projects", href: "/projects" },
 	{ name: "Contact", href: "/contact" },
-	{ name: "Pictures", href: "/contact" },
 ];
-const fadeInAnimationVariants = {
-	initial: {
-		opacity: 0,
-		y: 100,
-	},
-	animate: (index: number) => ({
-		opacity: 1,
-		y: 0,
-		transition: {
-			delay: 0.05 * index,
-		},
-	}),
-};
-const skillsData = [
-	"HTML",
-	"CSS",
-	"JavaScript",
-	"TypeScript",
-	"React",
-	"Next.js",
-	"Node.js",
-	"Git",
-	"Tailwind",
-	"Prisma",
-	"MongoDB",
-	"Redux",
-	"GraphQL",
-	"Express",
-	"PostgreSQL",
-	"Python",
-	"Framer Motion",
-]
 
 export default function Home() {
-	const { ref } = useSectionInView("Skills");
 	return (
 		<div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
 			<nav className="my-16 animate-fade-in">
@@ -77,30 +40,6 @@ export default function Home() {
 					<p>capacidad de resolución de problemas, muchas ganas de trabajar en equipo y aptitudes suficientes para el liderazgo,</p>
 					<p>trabajo bajo presión, constancia en el trabajo, de aprendizaje y adaptación rápida.</p> */}
 				</h2>
-				<section
-      id="skills"
-      ref={ref}
-      className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
-    >
-      <h1>My skills</h1>
-				<p className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
-					{skillsData.map((skill, index) => (
-						<motion.li
-							className="bg-slate-300 border border-black rounded-lg px-5 py-3 dark:bg-white/10 dark:text-white/80 hover:bg-slate-400 transition duration-300 ease-in-out transform hover:scale-105"
-							key={index}
-							variants={fadeInAnimationVariants}
-							initial="initial"
-							whileInView="animate"
-							viewport={{
-								once: true,
-							}}
-							custom={index}
-						>
-							{skill}
-						</motion.li>
-					))}
-				</p>
-				</section>
 			</div>
 		</div>
 	);
