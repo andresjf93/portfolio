@@ -1,8 +1,9 @@
+import type { Project } from "@/.contentlayer/generated";
 import Link from "next/link";
 import { Eye, View } from "lucide-react";
 
 type Props = {
-	project: "";
+	project: Project;
 	views: number;
 };
 
