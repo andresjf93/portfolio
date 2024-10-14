@@ -8,14 +8,14 @@ export default async function ProjectsPage() {
     const bootcampProjects = [
         {
             title: "Pi Henry Dogs",
-            description: "Aplicación web interactiva que utiliza datos de una API externa para mostrar información detallada sobre razas de perros. Proyecto enfocado en la integración de APIs, manejo de estado global y creación de interfaces dinámicas con React.",
+            description: "Aplicación web interactiva que utiliza una API para mostrar información sobre razas de perros, enfocada en manejo de estado global y APIs.",
             image: "https://raw.githubusercontent.com/andresjf93/portfolio/main/util/PI.png",
             link: "/projects/pi",
             technologies: ["React.js","Redux.js", "CSS", "API REST","Node.js "],
         },
         {
             title: "Hyper Events",
-            description: "Plataforma de compra y venta de tickets para eventos en tiempo real. Desarrollada con un enfoque en la experiencia de usuario, presenta una interfaz moderna y fluida que permite explorar eventos fácilmente. Ideal para quienes buscan vivir nuevas experiencias.",
+            description: "Plataforma para comprar y vender tickets de eventos, con una interfaz moderna y fluida.",
             image: "https://raw.githubusercontent.com/andresjf93/portfolio/main/util/Hyper%20Event.png",
             link: "/projects/hyper",
             technologies: ["Next.js", "Tailwind CSS", "Node.js", "JavaScript","PostgreSQL"],
@@ -24,20 +24,25 @@ export default async function ProjectsPage() {
 
     const personalProjects = [
         {
+            title: "Consistent Labs",
+            description: "Página web para mostrar el talento del equipo de diseño, con un enfoque en la interfaz de usuario dinámica y el backend eficiente",
+            image: "https://raw.githubusercontent.com/andresjf93/portfolio/main/util/Consistent.png",
+            link: "/projects/consistent",
+            technologies: ["React.js", "Tailwind CSS", "Desarrollo front end", "TypeScript", "JavaScript", "Node.js"],
+        },
+        {
             title: "Coinvert",
-            description: "Un proyecto innovador del equipo, enfocado en el mundo de blockchain y criptomonedas, donde fusionamos tecnología con un estilo visual retrowave que me apasiona. Esta plataforma no solo proporciona herramientas para el manejo de criptomonedas, sino que también crea una experiencia de usuario única, evocando la estética nostálgica de los años 80. Utilizando React.js y Node.js, he contribuido al desarrollo del frontend, asegurando una interfaz fluida y atractiva que resalta las capacidades de nuestro producto.",
+            description: "Plataforma enfocada en blockchain y criptomonedas con un estilo visual retrowave.",
             image: "https://raw.githubusercontent.com/andresjf93/portfolio/main/util/Coinvert.png",
             link: "/projects/coinvert",
             technologies: ["TypeScript", "JavaScript", "Tailwind CSS", "React.js", "Node.js"],
         },
         {
-            title: "Consistent Labs",
-            description: "Desarrollé una página web interactiva y atractiva destinada a exhibir el talento de nuestro equipo de diseño. Utilizando React.js para una interfaz de usuario dinámica y responsiva, combiné Node.js en el backend para gestionar eficientemente las solicitudes del servidor. Implementé TypeScript y JavaScript para garantizar un código más robusto y fácil de mantener. Esta plataforma no solo resalta nuestro portafolio de proyectos de diseño, sino que también mejora la experiencia del cliente al navegar por nuestras ofertas de manera fluida y atractiva.",
-            image: "https://raw.githubusercontent.com/andresjf93/portfolio/main/util/Consistent.png",
-            link: "/projects/consistent-labs",
-            technologies: ["React.js", "Tailwind CSS", "Desarrollo front end", "TypeScript", "JavaScript", "Node.js"],
+            title: "Proyectos Internacionales bajo NDA",
+            description: "He trabajado como frontend en varios proyectos internacionales relacionados con blockchain y criptomonedas bajo acuerdos de confidencialidad (NDA). Aunque no puedo compartir detalles específicos, estas experiencias me permitieron desarrollar habilidades avanzadas en React.js, Tailwind CSS y tecnologías modernas, siendo clave para mi crecimiento profesional.",
+            link: "#",
+            technologies: ["React.js", "Tailwind CSS", "TypeScript", "Blockchain"],
         },
-        // Agrega más proyectos personales aquí
     ];
 
     return (
@@ -63,11 +68,14 @@ export default async function ProjectsPage() {
                             <Card key={index}>
                                 <Link href={project.link}>
                                     <article className="relative w-full h-full p-4 md:p-8">
-                                        <img
-                                            src={project.image}
-                                            alt={project.title}
-                                            className="w-full h-48 object-cover"
-                                        />
+                                        {/* Renderiza la imagen solo si está definida */}
+                                        {project.image && (
+                                            <img
+                                                src={project.image}
+                                                alt={project.title}
+                                                className="w-full h-48 object-cover"
+                                            />
+                                        )}
                                         <h2 className="mt-4 text-2xl font-bold text-zinc-100 sm:text-3xl font-display">
                                             {project.title}
                                         </h2>
