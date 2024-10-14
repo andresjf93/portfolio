@@ -7,6 +7,7 @@ import { ArrowRight } from 'lucide-react';
 export default function Coinvert() {
     const images = [
         "https://raw.githubusercontent.com/andresjf93/portfolio/main/util/Coinvert.png",
+        "https://raw.githubusercontent.com/andresjf93/portfolio/main/util/Coinvert1.png",
         "https://raw.githubusercontent.com/andresjf93/portfolio/main/util/Coinvert2.png",
         "https://raw.githubusercontent.com/andresjf93/portfolio/main/util/Coinvert3.png",
     ];

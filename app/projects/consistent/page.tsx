@@ -7,6 +7,7 @@ import { ArrowRight } from 'lucide-react';
 export default function ConsistentLabs() {
     const images = [
         "https://raw.githubusercontent.com/andresjf93/portfolio/main/util/Consistent.png",
+        "https://raw.githubusercontent.com/andresjf93/portfolio/main/util/Consistent1.png",
         "https://raw.githubusercontent.com/andresjf93/portfolio/main/util/Consistent2.png",
         "https://raw.githubusercontent.com/andresjf93/portfolio/main/util/Consistent3.png",
     ];
