@@ -5,6 +5,7 @@ import { Metadata } from "next";
 import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
+	metadataBase: new URL('https://tusitio.com'),
 	title: {
 		default: "Andresjf93",
 		template: "%s | Andresjf93",
