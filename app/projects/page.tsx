@@ -23,6 +23,13 @@ export default async function ProjectsPage() {
     ];
 
     const personalProjects = [
+         {
+            title: "Consistent Labs",
+            description: "Desarrollé una página web interactiva y atractiva destinada a exhibir el talento de nuestro equipo de diseño. Utilizando React.js para una interfaz de usuario dinámica y responsiva, combiné Node.js en el backend para gestionar eficientemente las solicitudes del servidor. Implementé TypeScript y JavaScript para garantizar un código más robusto y fácil de mantener. Esta plataforma no solo resalta nuestro portafolio de proyectos de diseño, sino que también mejora la experiencia del cliente al navegar por nuestras ofertas de manera fluida y atractiva.",
+            image: "https://raw.githubusercontent.com/andresjf93/portfolio/main/util/Consistent.png",
+            link: "/projects/consistent-labs",
+            technologies: ["React.js", "Tailwind CSS", "Desarrollo front end", "TypeScript", "JavaScript", "Node.js"],
+        },
         {
             title: "Coinvert",
             description: "Un proyecto innovador del equipo, enfocado en el mundo de blockchain y criptomonedas, donde fusionamos tecnología con un estilo visual retrowave que me apasiona. Esta plataforma no solo proporciona herramientas para el manejo de criptomonedas, sino que también crea una experiencia de usuario única, evocando la estética nostálgica de los años 80. Utilizando React.js y Node.js, he contribuido al desarrollo del frontend, asegurando una interfaz fluida y atractiva que resalta las capacidades de nuestro producto.",
@@ -30,13 +37,7 @@ export default async function ProjectsPage() {
             link: "/projects/coinvert",
             technologies: ["TypeScript", "JavaScript", "Tailwind CSS", "React.js", "Node.js"],
         },
-        {
-            title: "Consistent Labs",
-            description: "Desarrollé una página web interactiva y atractiva destinada a exhibir el talento de nuestro equipo de diseño. Utilizando React.js para una interfaz de usuario dinámica y responsiva, combiné Node.js en el backend para gestionar eficientemente las solicitudes del servidor. Implementé TypeScript y JavaScript para garantizar un código más robusto y fácil de mantener. Esta plataforma no solo resalta nuestro portafolio de proyectos de diseño, sino que también mejora la experiencia del cliente al navegar por nuestras ofertas de manera fluida y atractiva.",
-            image: "https://raw.githubusercontent.com/andresjf93/portfolio/main/util/Consistent.png",
-            link: "/projects/consistent-labs",
-            technologies: ["React.js", "Tailwind CSS", "Desarrollo front end", "TypeScript", "JavaScript", "Node.js"],
-        },
+       
         // Agrega más proyectos personales aquí
     ];
 
