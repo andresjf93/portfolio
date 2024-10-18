@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 		siteName: "Andresjf.com",
 		images: [
 			{
-				url: "https://raw.githubusercontent.com/andresjf93/portfolio/main/util/og.png",  // Asegúrate de que esta imagen exista
+				url: "https://raw.githubusercontent.com/andresjf93/portfolio/main/public/og.png",  // Asegúrate de que esta imagen exista
 				width: 1200,  // Dimensiones recomendadas para Open Graph
 				height: 630,
 				alt: "Andresjf93 - Software Engineer",  // Texto alternativo de la imagen
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 		description: "Software engineer at upstash.com and founder of planetfall.io",
 		images: [
 			{
-				url: "https://raw.githubusercontent.com/andresjf93/portfolio/main/util/og.png",  // Usa la misma imagen que Open Graph
+				url: "https://raw.githubusercontent.com/andresjf93/portfolio/main/public/og.png",  // Usa la misma imagen que Open Graph
 				width: 1200,
 				height: 630,
 				alt: "Andresjf93 - Software Engineer",
