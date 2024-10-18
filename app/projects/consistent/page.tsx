@@ -1,9 +1,9 @@
 import React from 'react';
-import { Navigation } from '../../components/nav';
 import { Card } from '../../components/card';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import Particles from '@/app/components/particles';
+import { NavProject } from '@/app/components/navproject';
 
 export default function ConsistentLabs() {
     const images = [
@@ -19,9 +19,9 @@ export default function ConsistentLabs() {
                 className="absolute inset-0 -z-10 animate-fade-in"
                 quantity={100}
             />
-            <Navigation />
+            <NavProject />
             <div className="px-6 pt-16 mx-auto max-w-7xl lg:px-8 md:pt-24 lg:pt-32">
-                <div className='flex'>
+                <div className='md:flex'>
                     <div className="max-w-2xl mx-auto lg:mx-0">
                         <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl">
                             Consistent Labs
@@ -83,7 +83,7 @@ export default function ConsistentLabs() {
                 </div>
 
                 {/* Galería de imágenes debajo */}
-                <div className="grid grid-cols-2 gap-4 mt-8">
+                <div className="grid md:grid-cols-2 gap-4 mt-8">
                     {images.slice(1).map((image, index) => (
                         <Card key={index}>
                             <img

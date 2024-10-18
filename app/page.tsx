@@ -79,7 +79,7 @@ export default function Home() {
 						<p className="my-2 sm:my-4 text-zinc-400">
 							Aquí puedes ver algunos de mis últimos proyectos más destacados, desarrollados con diversas tecnologías y estilos de diseño.
 						</p>
-						<div className="grid grid-cols-1 gap-4 sm:gap-6 lg:gap-8 lg:grid-cols-2">
+						<div className="grid md:-ml-10 md:mr-20 grid-cols-1 gap-4 sm:gap-6 lg:gap-8 lg:grid-cols-2">
 							{latestProjects.map((project, index) => (
 								<Card key={index}>
 									{project.link ? (

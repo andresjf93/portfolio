@@ -3,7 +3,7 @@ import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
-export const Navigation: React.FC = () => {
+export const NavProject: React.FC = () => {
 	const ref = useRef<HTMLElement>(null);
 	const [isIntersecting, setIntersecting] = useState(true);
 
@@ -44,11 +44,11 @@ export const Navigation: React.FC = () => {
 
 					{/* Botón de regreso usando window.history.back */}
 					<Link
-							href="/"
-							className="duration-200 text-zinc-300 hover:text-zinc-100"
-					>
+							href="/projects"
+							className="duration-200 text-zinc-400 hover:text-zinc-100"
+						>
 						<ArrowLeft className="w-6 h-6" />
-					 </Link>
+					</Link>
 				</div>
 			</div>
 		</header>

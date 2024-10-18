@@ -1,7 +1,7 @@
 import React from 'react';
-import { Navigation } from '../../components/nav';
 import { Card } from '../../components/card';
 import Particles from '@/app/components/particles';
+import { NavProject } from '@/app/components/navproject';
 
 export default async function PiHenryDogs() {
     return (
@@ -9,9 +9,9 @@ export default async function PiHenryDogs() {
         <Particles
                 className="absolute inset-0 -z-10 animate-fade-in"
                 quantity={100}
-            />            <Navigation />
+            />            <NavProject />
             <div className="px-6 pt-16 mx-auto max-w-7xl lg:px-8 md:pt-24 lg:pt-32">
-                <div className='flex'>
+                <div className='md:flex'>
                     <div className="max-w-2xl mx-auto lg:mx-0">
                         <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl">
                             Pi Henry Dogs
@@ -31,7 +31,7 @@ export default async function PiHenryDogs() {
                             </p>
                         </div>
                     </div>
-                    <div className="my-auto justify-center text-center">
+                    <div className="md:my-auto my-5 justify-center text-center">
                         <Card>
                             <div className="inline-flex items-center px-6 py-3 text-lg font-semibold text-white bg-transparent rounded-lg border-b-2 border-transparent transition-all duration-300 hover:border-b-2 hover:border-zinc-400">
                                 <span className="underline">Link del deploy: En proceso.</span>

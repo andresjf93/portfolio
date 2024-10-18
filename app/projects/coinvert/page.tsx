@@ -1,9 +1,9 @@
 import React from 'react';
-import { Navigation } from '../../components/nav';
 import { Card } from '../../components/card';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import Particles from '@/app/components/particles';
+import { NavProject } from '@/app/components/navproject';
 
 export default function Coinvert() {
     const images = [
@@ -16,12 +16,12 @@ export default function Coinvert() {
     return (
         <div className="relative overflow-hidden bg-gradient-to-tl from-black via-blue-800/20 to-black pb-16">
             <Particles
-					className="absolute inset-0 -z-10 animate-fade-in"
-					quantity={100}
-				/>
-            <Navigation />
+                className="absolute inset-0 -z-10 animate-fade-in"
+                quantity={100}
+            />
+            <NavProject />
             <div className="px-6 pt-16 mx-auto max-w-7xl  lg:px-8 md:pt-24 lg:pt-32">
-                <div className='flex'>
+                <div className='md:flex'>
                     <div className="max-w-2xl mx-auto lg:mx-0">
                         <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl">
                             Coinvert
@@ -51,13 +51,13 @@ export default function Coinvert() {
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
                     {/* Imagen principal */}
                     <div className="p-0 pointer-events-none">
-                    <div className="mx-10 overflow-hidden relative duration-700 border rounded-xl hover:bg-zinc-800/10 group md:gap-8 hover:border-zinc-400/50 border-zinc-600">
-                        <img
-                            src={images[0]}
-                            alt="Coinvert principal"
-                            className="w-full h-auto object-cover rounded-lg shadow-lg"
-                        />
-                    </div>
+                        <div className="mx-10 overflow-hidden relative duration-700 border rounded-xl hover:bg-zinc-800/10 group md:gap-8 hover:border-zinc-400/50 border-zinc-600">
+                            <img
+                                src={images[0]}
+                                alt="Coinvert principal"
+                                className="w-full h-auto object-cover rounded-lg shadow-lg"
+                            />
+                        </div>
                     </div>
                     <div>
                         <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
@@ -82,7 +82,7 @@ export default function Coinvert() {
                 </div>
 
                 {/* Galería de imágenes debajo */}
-                <div className="grid grid-cols-2 gap-4 mt-8">
+                <div className="grid md:grid-cols-2 gap-4 mt-8">
                     {images.slice(1).map((image, index) => (
                         <Card key={index}>
                             <img
