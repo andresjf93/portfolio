@@ -58,7 +58,7 @@ export default function About() {
 						{/* CV Download Button */}
 						<div className="mt-8 mx-10 ">
 							<Link
-								href="/path/to/cv.pdf"
+								href="https://github.com/andresjf93/portfolio/blob/main/public/cv/Andrés%20J.%20Farias.pdf"
 								target="_blank"
 								className="px-8 py-3 text-lg font-semibold text-white bg-gradient-to-r from-zinc-600 via-zinc-500 to-zinc-400 rounded-full hover:opacity-90 transition-all"
 							>
