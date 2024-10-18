@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect } from "react";
 import { useMousePosition } from "@/util/mouse";
 
 interface ParticlesProps {
@@ -13,9 +13,9 @@ interface ParticlesProps {
 
 export default function Particles({
 	className = "",
-	quantity = 30,
+	quantity = 100, // Incrementado para más partículas
 	staticity = 50,
-	ease = 50,
+	ease = 70,
 	refresh = false,
 }: ParticlesProps) {
 	const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -98,11 +98,11 @@ export default function Particles({
 		const y = Math.floor(Math.random() * canvasSize.current.h);
 		const translateX = 0;
 		const translateY = 0;
-		const size = Math.floor(Math.random() * 2) + 0.1;
+		const size = Math.floor(Math.random() * 2) + 1; // Tamaño incrementado
 		const alpha = 0;
-		const targetAlpha = parseFloat((Math.random() * 0.6 + 0.1).toFixed(1));
-		const dx = (Math.random() - 0.5) * 0.2;
-		const dy = (Math.random() - 0.5) * 0.2;
+		const targetAlpha = parseFloat((Math.random() * 0.8 + 0.2).toFixed(1)); // Mayor rango para el brillo
+		const dx = (Math.random() - 0.5) * 0.2; // Velocidad de movimiento ajustada
+		const dy = (Math.random() - 0.5) * 0.2; // Velocidad de movimiento ajustada
 		const magnetism = 0.1 + Math.random() * 4;
 		return {
 			x,
@@ -124,7 +124,7 @@ export default function Particles({
 			context.current.translate(translateX, translateY);
 			context.current.beginPath();
 			context.current.arc(x, y, size, 0, 2 * Math.PI);
-			context.current.fillStyle = `rgba(255, 255, 255, ${alpha})`;
+			context.current.fillStyle = `rgba(255, 255, 255, ${alpha})`; // Color brillante
 			context.current.fill();
 			context.current.setTransform(dpr, 0, 0, dpr, 0, 0);
 
@@ -181,7 +181,7 @@ export default function Particles({
 				remapValue(closestEdge, 0, 20, 0, 1).toFixed(2),
 			);
 			if (remapClosestEdge > 1) {
-				circle.alpha += 0.02;
+				circle.alpha += 0.04; // Incrementar el incremento de alpha para un brillo más rápido
 				if (circle.alpha > circle.targetAlpha) {
 					circle.alpha = circle.targetAlpha;
 				}
@@ -196,6 +196,7 @@ export default function Particles({
 			circle.translateY +=
 				(mouse.current.y / (staticity / circle.magnetism) - circle.translateY) /
 				ease;
+
 			// circle gets out of the canvas
 			if (
 				circle.x < -circle.size ||
@@ -208,7 +209,6 @@ export default function Particles({
 				// create a new circle
 				const newCircle = circleParams();
 				drawCircle(newCircle);
-				// update the circle position
 			} else {
 				drawCircle(
 					{

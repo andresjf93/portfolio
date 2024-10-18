@@ -3,6 +3,7 @@ import { Navigation } from '../../components/nav';
 import { Card } from '../../components/card';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
+import Particles from '@/app/components/particles';
 
 export default function Coinvert() {
     const images = [
@@ -13,9 +14,13 @@ export default function Coinvert() {
     ];
 
     return (
-        <div className="relative pb-16">
+        <div className="relative overflow-hidden bg-gradient-to-tl from-black via-blue-800/20 to-black pb-16">
+            <Particles
+					className="absolute inset-0 -z-10 animate-fade-in"
+					quantity={100}
+				/>
             <Navigation />
-            <div className="px-6 pt-16 mx-auto max-w-7xl lg:px-8 md:pt-24 lg:pt-32">
+            <div className="px-6 pt-16 mx-auto max-w-7xl  lg:px-8 md:pt-24 lg:pt-32">
                 <div className='flex'>
                     <div className="max-w-2xl mx-auto lg:mx-0">
                         <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl">

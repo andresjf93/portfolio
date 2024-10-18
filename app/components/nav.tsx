@@ -20,10 +20,10 @@ export const Navigation: React.FC = () => {
 	return (
 		<header ref={ref}>
 			<div
-				className={`fixed inset-x-0 top-0 z-50 backdrop-blur  duration-200 border-b  ${
+				className={`fixed inset-x-0 top-0 z-50 backdrop-blur duration-200 border-b ${
 					isIntersecting
 						? "bg-zinc-900/0 border-transparent"
-						: "bg-zinc-900/500  border-zinc-800 "
+						: "bg-zinc-900/500 border-zinc-800"
 				}`}
 			>
 				<div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
@@ -35,19 +35,21 @@ export const Navigation: React.FC = () => {
 							Projects
 						</Link>
 						<Link
-							href="/contact"
+							href="/about"
 							className="duration-200 text-zinc-400 hover:text-zinc-100"
 						>
-							Contact
+							About
 						</Link>
 					</div>
 
-					<Link
-						href="/"
+					{/* Botón de regreso usando window.history.back */}
+					<button
+					aria-label="back"
+						onClick={() => window.history.back()} // Usa la API nativa para ir atrás
 						className="duration-200 text-zinc-300 hover:text-zinc-100"
 					>
-						<ArrowLeft className="w-6 h-6 " />
-					</Link>
+						<ArrowLeft className="w-6 h-6" />
+					</button>
 				</div>
 			</div>
 		</header>
