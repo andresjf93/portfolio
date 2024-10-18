@@ -12,19 +12,32 @@ export const metadata: Metadata = {
 	description: "Software engineer at upstash.com and founder of planetfall.io",
 	openGraph: {
 		title: "Andresjf93",
-		description:
-			"Software engineer at upstash.com and founder of planetfall.io",
-		url: "https://Andresjf.com",
+		description: "Software engineer at upstash.com and founder of planetfall.io",
+		url: "https://andresjf93.vercel.app",
 		siteName: "Andresjf.com",
 		images: [
 			{
-				url: "https://Andresjf.com/og.png",
-				width: 1920,
-				height: 1080,
+				url: "https://raw.githubusercontent.com/andresjf93/portfolio/main/util/og.png",  // Asegúrate de que esta imagen exista
+				width: 1200,  // Dimensiones recomendadas para Open Graph
+				height: 630,
+				alt: "Andresjf93 - Software Engineer",  // Texto alternativo de la imagen
 			},
 		],
 		locale: "en-US",
 		type: "website",
+	},
+	twitter: {
+		title: "Andresjf93",
+		card: "summary_large_image",  // Tipo de tarjeta para Twitter
+		description: "Software engineer at upstash.com and founder of planetfall.io",
+		images: [
+			{
+				url: "https://raw.githubusercontent.com/andresjf93/portfolio/main/util/og.png",  // Usa la misma imagen que Open Graph
+				width: 1200,
+				height: 630,
+				alt: "Andresjf93 - Software Engineer",
+			},
+		],
 	},
 	robots: {
 		index: true,
@@ -37,14 +50,11 @@ export const metadata: Metadata = {
 			"max-snippet": -1,
 		},
 	},
-	twitter: {
-		title: "Andresjf",
-		card: "summary_large_image",
-	},
 	icons: {
-		shortcut: "/favicon.png",
+		shortcut: "/favicon.png",  // Asegúrate de que favicon.png esté en public
 	},
 };
+
 const inter = Inter({
 	subsets: ["latin"],
 	variable: "--font-inter",
