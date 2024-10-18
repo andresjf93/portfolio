@@ -58,13 +58,14 @@ export default function About() {
 						{/* CV Download Button */}
 						<div className="mt-8 mx-10 ">
 							<Link
-								href="https://github.com/andresjf93/portfolio/blob/main/public/cv/Andrés%20J.%20Farias.pdf"
-								target="_blank"
+								href="/cv/Andrés%20J.%20Farias.pdf" // Asegúrate de que la ruta sea correcta
+								download // Este atributo indica que debe descargarse el archivo
 								className="px-8 py-3 text-lg font-semibold text-white bg-gradient-to-r from-zinc-600 via-zinc-500 to-zinc-400 rounded-full hover:opacity-90 transition-all"
 							>
 								Descargar CV
 							</Link>
 						</div>
+
 						<Card>
 							<section id="skills" className="p-8 ">
 								<h2 className="text-3xl font-bold text-white border-b-2 z-10  border-blue-400 pb-2">Habilidades Blandas </h2>
