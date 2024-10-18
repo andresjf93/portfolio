@@ -60,6 +60,7 @@ export default function About() {
 							<Link
 								href="/cv/Andrés%20J.%20Farias.pdf" // Asegúrate de que la ruta sea correcta
 								download // Este atributo indica que debe descargarse el archivo
+								target="_blank"
 								className="px-8 py-3 text-lg font-semibold text-white bg-gradient-to-r from-zinc-600 via-zinc-500 to-zinc-400 rounded-full hover:opacity-90 transition-all"
 							>
 								Descargar CV
