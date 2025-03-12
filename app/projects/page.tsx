@@ -46,6 +46,12 @@ export default function ProjectsPage() {
             link: "", // Sin link para este proyecto
             technologies: ["React.js", "Tailwind CSS", "TypeScript", "Blockchain"],
         },
+        {
+            title: "Dashboard Interactivo de Ventas",
+            description: "He trabajado en Un panel de control moderno que visualiza estadísticas de ventas en tiempo real. Con gráficos interactivos, seguimiento de tendencias y una interfaz optimizada para facilitar la toma de decisiones comerciales.",
+            link: "https://raw.githubusercontent.com/andresjf93/portfolio/main/util/Dashboard.png", // Asegúrate de actualizar esta URL con la imagen correcta, // Sin link para este proyecto
+            technologies: ["React.js", "Tailwind CSS", "TypeScript", "Recharts", ]
+        },
     ];
 
     return (
