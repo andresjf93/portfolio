@@ -5,9 +5,10 @@ import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import Particles from "../components/particles";
 import Footer from "../components/Footer";
+import Image from "next/image";
 
 export const revalidate = 60;
-export default async function ProjectsPage() {
+export default function ProjectsPage() {
     const bootcampProjects = [
         {
             title: "Pi Henry Dogs",
@@ -65,7 +66,7 @@ export default async function ProjectsPage() {
 
                     <div className="w-full h-px bg-zinc-800" />
 
-                    {/* Sección para proyectos personales */} 
+                    {/* Sección para proyectos personales */}
                     <div className="mt-12">
                         <h3 className="text-2xl font-bold text-zinc-100">Proyectos Personales y de Trabajo</h3>
                         <p className="my-4 text-zinc-400">
@@ -79,10 +80,13 @@ export default async function ProjectsPage() {
                                             <article className="relative w-full h-full p-4 md:p-8">
                                                 {/* Renderiza la imagen solo si está definida */}
                                                 {project.image && (
-                                                    <img
+                                                    <Image
                                                         src={project.image}
                                                         alt={project.title}
+                                                        width={500} // ajusta según sea necesario
+                                                        height={300}
                                                         className="w-full h-48 object-cover"
+                                                        priority
                                                     />
                                                 )}
                                                 <h2 className="mt-4 text-2xl font-bold text-zinc-100 sm:text-3xl font-display">
@@ -143,10 +147,13 @@ export default async function ProjectsPage() {
                                 <Card key={index}>
                                     <Link href={project.link}>
                                         <article className="relative w-full h-full p-4 md:p-8">
-                                            <img
+                                            <Image
                                                 src={project.image}
                                                 alt={project.title}
+                                                width={500} // ajusta según sea necesario
+                                                height={300}
                                                 className="w-full h-48 object-cover"
+                                                priority
                                             />
                                             <h2 className="mt-4 text-2xl font-bold text-zinc-100 sm:text-3xl font-display">
                                                 {project.title}

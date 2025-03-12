@@ -1,41 +1,54 @@
 import "../global.css";
-import { Inter } from "@next/font/google";
-import LocalFont from "@next/font/local";
 import { Metadata } from "next";
-import { Analytics } from "./components/analytics";
+import { Inter } from "next/font/google";
+import localFont from "next/font/local";
+
+// 🔹 Configuración de fuentes
+const inter = Inter({
+	subsets: ["latin"],
+	variable: "--font-inter",
+	display: "swap",
+});
+
+const calSans = localFont({
+	src: "../public/fonts/CalSans-SemiBold.ttf",
+	variable: "--font-calsans",
+	display: "swap",
+});
 
 export const metadata: Metadata = {
+	metadataBase: new URL("https://andresjf93.vercel.app"),
 	title: {
 		default: "Andresjf93",
 		template: "%s | Andresjf93",
 	},
-	description: "Software engineer at upstash.com and founder of planetfall.io",
+	description: "Desarrollador Frontend especializado en TypeScript, React y Tailwind CSS",
 	openGraph: {
-		title: "Andresjf93",
-		description: "Software engineer at upstash.com and founder of planetfall.io",
+		title: "Andrés",
+		description: "Desarrollador Frontend especializado en TypeScript, React y Tailwind CSS",
 		url: "https://andresjf93.vercel.app",
-		siteName: "Andresjf.com",
+		siteName: "andresjf93.vercel.app",
 		images: [
 			{
 				url: "https://raw.githubusercontent.com/andresjf93/portfolio/main/public/og.png",  // Asegúrate de que esta imagen exista
 				width: 1200,  // Dimensiones recomendadas para Open Graph
 				height: 630,
-				alt: "Andresjf93 - Software Engineer",  // Texto alternativo de la imagen
+				alt: "Andrés - Desarrollador Frontend",  // Texto alternativo de la imagen
 			},
 		],
-		locale: "en-US",
+		locale: "es-ES",
 		type: "website",
 	},
 	twitter: {
-		title: "Andresjf93",
-		card: "summary_large_image",  // Tipo de tarjeta para Twitter
-		description: "Software engineer at upstash.com and founder of planetfall.io",
+		card: "summary_large_image",
+		title: "Andrés",
+		description: "Desarrollador Frontend especializado en TypeScript, React y Tailwind CSS",
 		images: [
 			{
 				url: "https://raw.githubusercontent.com/andresjf93/portfolio/main/public/og.png",  // Usa la misma imagen que Open Graph
 				width: 1200,
 				height: 630,
-				alt: "Andresjf93 - Software Engineer",
+				alt: "Andrés - Desarrollador Frontend",
 			},
 		],
 	},
@@ -55,31 +68,10 @@ export const metadata: Metadata = {
 	},
 };
 
-const inter = Inter({
-	subsets: ["latin"],
-	variable: "--font-inter",
-});
-
-const calSans = LocalFont({
-	src: "../public/fonts/CalSans-SemiBold.ttf",
-	variable: "--font-calsans",
-});
-
-export default function RootLayout({
-	children,
-}: {
-	children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
-			<head>
-				<Analytics />
-			</head>
-			<body
-				className={`bg-black ${
-					process.env.NODE_ENV === "development" ? "debug-screens" : undefined
-				}`}
-			>
+		<html lang="es" className={`${inter.variable} ${calSans.variable}`}>
+			<body className="bg-black text-white">
 				{children}
 			</body>
 		</html>
