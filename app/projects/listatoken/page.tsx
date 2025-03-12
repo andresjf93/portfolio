@@ -33,7 +33,7 @@ export default function Dashboard() {
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center px-6 py-3 text-lg font-semibold text-white bg-transparent rounded-lg border-b-2 border-transparent transition-all duration-300 hover:border-b-2 hover:border-zinc-400"
                             >
-                                <span className="underline">Visitar Dashboard</span>
+                                <span className="underline">Visitar Página Web</span>
                                 <ArrowRight className="ml-2" />
                             </Link>
                         </Card>
