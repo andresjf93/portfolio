@@ -49,8 +49,16 @@ export default function ProjectsPage() {
         {
             title: "Dashboard Interactivo de Ventas",
             description: "He trabajado en Un panel de control moderno que visualiza estadísticas de ventas en tiempo real. Con gráficos interactivos, seguimiento de tendencias y una interfaz optimizada para facilitar la toma de decisiones comerciales.",
-            link: "https://raw.githubusercontent.com/andresjf93/portfolio/main/util/Dashboard.png", // Asegúrate de actualizar esta URL con la imagen correcta, // Sin link para este proyecto
-            technologies: ["React.js", "Tailwind CSS", "TypeScript", "Recharts", ]
+             image: "https://raw.githubusercontent.com/andresjf93/portfolio/main/util/Dashboard.png", // Asegúrate de actualizar esta URL con la imagen correcta, // Sin link para este proyecto
+             link: "/projects/dashboard", // Asegúrate de actualizar esta URL con la imagen correcta, // Sin link para este proyecto
+            technologies: ["React.js", "Tailwind CSS", "TypeScript", "Recharts", "Node.js"]
+        },
+        {
+            title: "Dashboard Interactivo de Ventas",
+            description: "He trabajado en Un panel de control moderno que visualiza estadísticas de ventas en tiempo real. Con gráficos interactivos, seguimiento de tendencias y una interfaz optimizada para facilitar la toma de decisiones comerciales.",
+             image: "https://raw.githubusercontent.com/andresjf93/portfolio/main/util/listatoken.png", // Asegúrate de actualizar esta URL con la imagen correcta, // Sin link para este proyecto
+             link: "/projects/listatoken", // Asegúrate de actualizar esta URL con la imagen correcta, // Sin link para este proyecto
+            technologies: ["React.js", "Tailwind CSS", "TypeScript", "Vite", "Node.js", "Lucide React"]
         },
     ];
 

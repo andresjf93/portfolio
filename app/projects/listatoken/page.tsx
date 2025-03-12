@@ -7,7 +7,7 @@ import { NavProject } from '@/app/components/navproject';
 
 export default function Dashboard() {
     const images = [
-        "https://raw.githubusercontent.com/andresjf93/portfolio/main/util/Dashboard.png", // Asegúrate de actualizar esta URL con la imagen correcta
+        "https://raw.githubusercontent.com/andresjf93/portfolio/main/util/listatoken.png", // Asegúrate de actualizar esta URL con la imagen correcta
     ];
 
     return (
@@ -19,17 +19,16 @@ export default function Dashboard() {
                 <div className="md:flex">
                     <div className="max-w-2xl mx-auto lg:mx-0">
                         <h1 className="text-4xl font-bold tracking-tight text-zinc-100 sm:text-5xl">
-                        Lista de Tokens y Proyectos
+                            Lista de Tokens y Proyectos
                         </h1>
                         <p className="mt-4 text-zinc-400">
-                            Un panel de control moderno que visualiza estadísticas de ventas en tiempo real. Con gráficos interactivos, seguimiento de tendencias y una interfaz optimizada para facilitar la toma de decisiones comerciales.
-                        </p>
+                            Es una plataforma diseñada para explorar y listar tokens en el ecosistema Web3. Ofrece una interfaz moderna e intuitiva que permite a los usuarios descubrir nuevos proyectos, verificar detalles clave de cada token y mantenerse actualizados sobre el mercado cripto.     </p>
                     </div>
 
                     <div className="mt-16 text-center">
                         <Card>
                             <Link
-                                href="https://dashboard-interactivo-ten.vercel.app" // Cambia esta URL si tienes un despliegue
+                                href="https://listweb3token.com" // Cambia esta URL si tienes un despliegue
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center px-6 py-3 text-lg font-semibold text-white bg-transparent rounded-lg border-b-2 border-transparent transition-all duration-300 hover:border-b-2 hover:border-zinc-400"
@@ -60,20 +59,20 @@ export default function Dashboard() {
                             Funcionalidades Principales
                         </h2>
                         <ul className="mt-4 space-y-4 text-zinc-400">
-                            <li>Gráficos interactivos de ventas y tendencias.</li>
-                            <li>Filtros dinámicos para análisis detallado.</li>
-                            <li>Seguimiento de ingresos y desempeño en tiempo real.</li>
-                            <li>Interfaz intuitiva optimizada para usuarios empresariales.</li>
+                            <li>Listado de tokens con información detallada.</li>
+                            <li>Búsqueda y filtrado avanzado por red blockchain.</li>
+                            <li>Interfaz intuitiva con una experiencia optimizada para usuarios Web3.</li>
+                            <li>Seguridad y transparencia en la visualización de datos.</li>
                         </ul>
 
                         <h2 className="mt-8 text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
                             Tecnologías Utilizadas
                         </h2>
                         <ul className="mt-4 space-y-4 text-zinc-400">
-                            <li>React y TypeScript para la lógica del Dashboard.</li>
+                            <li>React + TypeScript → Para una UI dinámica, tipada y escalable.</li>
                             <li>Tailwind CSS para un diseño moderno y adaptable.</li>
-                            <li>Recharts para la visualización de datos.</li>
-                            
+                            <li>Vite → Para un desarrollo rápido y optimizado.</li>
+                            <li>Lucide React → Para iconografía moderna y minimalista</li>
                         </ul>
                     </div>
                 </div>
