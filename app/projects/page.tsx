@@ -26,6 +26,13 @@ export default function ProjectsPage() {
     ];
 
     const personalProjects = [
+          {
+            title: "Marpatech",
+            description: "Sitio web corporativo para empresa de instrumentación industrial con presencia en Perú, Colombia y Argentina. Desarrollado y lanzado en el primer mes, incluyendo gestión de hosting, DNS, SSL y correo corporativo.",
+            image: "https://marpatech.com",
+            link: "https://marpatech.com",
+            technologies: ["HTML", "CSS", "JavaScript", "PHP", "Webmaster", "DNS", "SSL"],
+        },
         {
             title: "Consistent Labs",
             description: "Página web para mostrar el talento del equipo de diseño, con un enfoque en la interfaz de usuario dinámica y el backend eficiente",
