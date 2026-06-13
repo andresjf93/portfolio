@@ -42,7 +42,7 @@ export default function Footer() {
 				<div className="flex gap-6">
 					<a
 					aria-label="git"
-						href="https://github.com/andresfarias"
+						href="https://github.com/andresjf93"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="hover:text-zinc-100"
@@ -51,7 +51,7 @@ export default function Footer() {
 					</a>
 					<a
 					aria-label="linkedin"
-						href="https://linkedin.com/in/andresfarias"
+						href="https://linkedin.com/in/andjf93"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="hover:text-zinc-100"
@@ -60,7 +60,7 @@ export default function Footer() {
 					</a>
 					<a
 					aria-label="mail"
-						href="mailto:andresfarias@gmail.com"
+						href="mailto:andresjf93@gmail.com"
 						className="hover:text-zinc-100"
 					>
 						<MailIcon className="w-6 h-6" />
