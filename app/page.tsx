@@ -11,24 +11,13 @@ const navigation = [
 ];
 // 🔹 Últimos proyectos
 const latestProjects = [
-	{
-		title: "Consistent Labs",
-		description:
-			"Página web para mostrar el talento del equipo de diseño, con un enfoque en la interfaz de usuario dinámica y el backend eficiente.",
-		image:
-			"https://raw.githubusercontent.com/andresjf93/portfolio/main/util/Consistent.png",
-		link: "/projects/consistent",
-		technologies: ["React.js", "Tailwind CSS", "Desarrollo front end", "TypeScript", "JavaScript", "Node.js"],
-	},
-	{
-		title: "Coinvert",
-		description:
-			"Plataforma enfocada en blockchain y criptomonedas con un estilo visual retrowave.",
-		image:
-			"https://raw.githubusercontent.com/andresjf93/portfolio/main/util/Coinvert.png",
-		link: "/projects/coinvert",
-		technologies: ["TypeScript", "JavaScript", "Tailwind CSS", "React.js", "Node.js"],
-	},
+   {
+            title: "Marpatech",
+            description: "Sitio web corporativo para empresa de instrumentación industrial con presencia en Perú, Colombia y Argentina. Desarrollado y lanzado en el primer mes, incluyendo gestión de hosting, DNS, SSL y correo corporativo.",
+            image: "https://marpatech.com",
+            link: "https://marpatech.com",
+            technologies: ["HTML", "CSS", "JavaScript", "PHP", "Webmaster", "DNS", "SSL"],
+        },
 ];
 export default function Home() {
 	return (
